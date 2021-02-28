@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    color: #007bff;
+}
+#user{
+    color: red;
+    display: none;
+}
+
+#pass{
+    color: red;
+    display: none;
+}
