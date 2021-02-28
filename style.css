@@ -11,3 +11,8 @@ h1{
     color: red;
     display: none;
 }
+
+#value1, #value2{
+    color: red;
+    display: none;
+}
