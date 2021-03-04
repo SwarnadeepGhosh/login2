@@ -14,7 +14,6 @@ function validateForm() {
         alert("Please enter CORRECT credentials");
         return false;
     }
-
 }
 
 function validateUserId() {
@@ -61,4 +60,15 @@ function validatePassword() {
         //console.log("password is ok")
     }
 
+}
+
+function confirmPassword() {
+    var p1 = document.getElementById("password").value;
+    var p2 = document.getElementById("confirm").value;
+    if (p1 != p2) {
+        document.getElementById("confirmPassword").style.display = "block";
+    }
+    else{
+        document.getElementById("confirmPassword").style.display = "none";
+    }
 }

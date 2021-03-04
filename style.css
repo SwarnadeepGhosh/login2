@@ -1,18 +1,12 @@
+body{
+    margin: 10px 10px 30px 10px;
+}
 h1{
     text-align: center;
     color: #007bff;
 }
-#user{
-    color: red;
-    display: none;
-}
 
-#pass{
-    color: red;
-    display: none;
-}
-
-#value1, #value2{
+#pass, #user , #value1, #value2, #confirmPassword{
     color: red;
     display: none;
 }
