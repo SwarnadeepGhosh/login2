@@ -5,8 +5,12 @@ h1{
     text-align: center;
     color: #007bff;
 }
- 
+
 #pass, #user , #value1, #value2, #confirmPassword{
     color: red;
     display: none;
+}
+.input_values{
+    text-align: center;
+    color: #01725a;
 }

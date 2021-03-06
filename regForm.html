@@ -21,7 +21,7 @@
         <hr>
 
         <div class="row justify-content-center align-items-center">
-            <form name="myForm" action="" onsubmit="return validateForm()" method="POST" class="col-10">
+            <form name="myForm" action="" method="POST" class="col-10">
 
                 <div class="form-group row">
                     <label for="name" class="col-sm-2 col-form-label">Name:</label>
@@ -61,10 +61,9 @@
                 <fieldset class="form-group">
                     <div class="row">
                         <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-                        <div class="col-sm-10">
+                        <div class="col-sm-10" id="gender">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="male" value="male"
-                                    checked>
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
                                 <label for="male" class="form-check-label" for="male">Male</label>
                             </div>
                             <div class="form-check">
@@ -72,20 +71,12 @@
                                 <label for="female" class="form-check-label" for="female">Female</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gender" id="notToSay"
-                                    value="notToSay">
+                                <input class="form-check-input" type="radio" name="gender" id="notToSay" value="notToSay">
                                 <label for="notToSay" class="form-check-label" for="notToSay">Rather Not to Say</label>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-
-                <div class="form-group row">
-                    <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
-                    <div class="col-sm-10">
-                        <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter Phone number">
-                    </div>
-                </div>
 
                 <div class="form-group row">
                     <label for="userId" class="col-sm-2 col-form-label">User Id:</label>
@@ -113,11 +104,17 @@
                     </div>
                 </div>
 
-                <a href="index.html"><button type="button" class="btn btn-link">Already Registered? Back to Login</button></a>
-                <input type="submit" class="btn btn-primary float-right" value="Register">
-            </form>
+                <a href="index.html"><button type="button" class="btn btn-link">Already Registered? Back to
+                        Login</button></a>
 
+                <button type="submit" class="btn btn-primary float-right" onclick="result(event)">Register</button>
+                <!--<input type="submit" class="btn btn-primary float-right" value="Register">-->
+            </form>
         </div>
+        <hr>
+        <p class="input_values" id="input_values">hjscjsc</p>
+        <hr>
+
     </div>
 
 
